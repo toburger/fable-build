@@ -18,3 +18,5 @@ RUN apt install apt-transport-https dirmngr \
  && echo "deb https://download.mono-project.com/repo/debian stable-stretch main" | tee /etc/apt/sources.list.d/mono-official-stable.list \
  && apt update \
  && apt install -y mono-devel
+
+CMD [ "sh" ]
